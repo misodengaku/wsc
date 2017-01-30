@@ -12,7 +12,7 @@ import (
 
 func main() {
 	if len(os.Args) < 2 {
-		fmt.Fprintf(os.Stderr, "usage: %s [URL]", os.Args[0])
+		fmt.Fprintf(os.Stderr, "usage: %s [URL]\n", os.Args[0])
 		os.Exit(1)
 	}
 	ws := connect(os.Args[1])
